@@ -1,0 +1,599 @@
+//* Pierce Gresham*/
+/* Final Project */
+/* 8/15/16 */
+
+/* normalize.css v2.1.2 | MIT License | git.io/normalize
+    (truncated for example in book)
+---------------------------------------------------------------- */
+
+/* ::: HTML5 display definitions ::: */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+/* ::: Base ::: */
+/**
+ * Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* ::: Links ::: */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ::: Typography ::: */
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/* ::: Embedded content ::: */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0;
+}
+/* -- end of abridged normalize -- */
+
+* {
+	box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'Social Icons';
+  src: url("fonts/socialico-webfont.eot");
+  src: url("fonts/socialico-webfont.eot?#iefix") format("embedded-opentype"), 
+        url("fonts/socialico-webfont.woff") format("woff"), 
+        url("fonts/socialico-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'web_symbolsregular';
+    src: url('fonts/websymbols-regular-webfont.woff2') format('woff2'),
+         url('fonts/websymbols-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font: 1em/1.5em "Open Sans", Sans-serif;
+	color: #444;
+	background-color: #333;
+	margin: 0;
+	padding: 0;
+	max-width: 960px;
+	margin: auto;
+
+}
+
+header {
+	/*border-radius: .5em;*/
+	
+	/*padding-bottom: .5em;*/
+	clear: both;
+	overflow: hidden;
+
+}
+
+ul, 
+ol {
+	list-style:none;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.larger {
+	font-size: 2em;
+}
+
+
+.header-border {
+	border: .5em solid #507339;
+	border-style: groove;
+	box-shadow: 0 0 5px 2px #666 inset;
+	background-color: hsla(23, 14%, 52%, 0.5);
+	clear: both;
+	overflow: hidden;
+	background-image: url(../img/dock-lake-bkg.jpg);
+	background-repeat:no-repeat;
+	/*background-size:contain;*/
+	background-position:center 45%;
+}
+
+#rental  {
+	background-image: url(../img/keys.jpg);
+	background-position:center 55%;
+}
+
+
+
+.main-header:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+.page {
+	max-width: 960px;
+	margin: auto;
+	background-color: #658061;
+	border: 1px solid #555;
+	background-image: url(../img/wood-wall.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	padding: 0;
+}
+
+#kids {
+	background-image: url(../img/kids-rock.jpg);
+}
+
+
+
+
+.welcome-txt {
+	font: 1.75em/.75em 'Courgette', Sans-serif;
+	text-align: center;
+	margin-top: .6em;
+	margin-bottom: 0;
+	color: #111;
+}
+
+.loon-img {
+	display: block;
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 1em 0;
+}
+
+.social-sites {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+	display: block;
+	text-align: center;
+	margin-bottom: .75em;
+	margin-top: 0;
+}
+
+.social-sites li {
+	display: inline-block;
+	margin: 0 .5em;
+	text-align: center;
+}
+
+.fb-like {
+	display: block;
+	margin-top: .5em;
+	margin-bottom: 1em;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	/*text-align: center;	
+	width: 20%;
+	margin-left :40%;
+	margin-right: 40%;*/
+}
+
+
+
+ul .web_symbolsregular  {
+	color: #ccc;
+	font: 2em/1em 'web_symbolsregular', Sans-serif;
+	text-decoration: none;	
+}
+
+ul .web_symbolsregular  {
+	display: inline;
+}
+
+/* Begin Nav Bar */
+
+
+.main-nav,
+.drop-nav {
+  background: #92A7B3;
+  text-transform: uppercase;
+}
+
+.main-nav {
+	margin: 0;
+    font-size: .75em;
+    clear: both;
+}
+
+.main-nav:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.main-nav li {
+	border-left: 1px solid #777;
+	float: left;
+}
+
+.main-nav li:first-child {
+	border-left: none;
+}
+
+.main-nav li:hover  {
+    background-color: #82949E;
+  }
+
+.main-nav a {
+	text-decoration: none;
+	/* Use padding on the a element! to get good spacing.*/
+	padding: 5px 2px;
+	color: #444;
+	display: block;
+	font-size: .7em;
+}
+
+.main-nav li:first-child  {
+	
+}
+
+.current-page {
+	background-color: #ACBCC2 ;
+}
+
+/* Dropdown styles -------------------- */
+
+/* Position relative to allow to place nested elements
+relative to parent class. */
+
+.drop-down {
+  position: relative;
+  padding-right: .25em;
+}
+
+/*.drop-down:after {
+  content: "\25BE";
+  font-size: 1em;
+  color: #444;					
+  display: block;
+  position: absolute;
+  top: 17%;
+  right: 3%;
+}
+*/
+/* Position absolute to reference the parent's 
+relative class. 
+Disply none to hide the nested list until hover. */
+.drop-nav {
+	display: none;
+	position: absolute;
+	/*top: 100%;*/
+
+}
+
+/* Add border styles to nested list */
+.drop-nav li {
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
+	border-left: none;
+	display: block;
+
+
+}
+
+.drop-nav li:last-child {
+	border-bottom: none;
+}
+
+.drop-down:hover > .drop-nav {
+  display: block;
+}
+
+/* End Nav */
+
+/* Begin Main */
+
+
+
+.blogs h2,
+.links h2,
+.about h2 {
+	font: 1.75em/1em "Open Sans";
+	color: #444;
+}
+
+
+
+.blogs > h2 {
+	margin-left: .25em;
+	color: #ddd;
+	font-size: 2.5em;
+}
+
+.feature,
+.about,
+.links {
+	border: 2px solid #666;
+	border-radius: .25em;
+	margin: .25em .5em 1.5em;
+	padding: .5em;
+	background-color: rgba(186, 186, 186, 0.8);
+	box-shadow: 0 0 3px 2px #444;
+}
+
+.feature img {
+	max-width: 100%;
+}
+
+.feature-text {
+	font-size: 1.5em;
+	line-height: 1.25em;
+	padding: 0em 1em 0 1em;
+}
+
+.blogs>h2 {
+	display: inline-block;
+}
+
+
+.feature {
+	clear: both;
+}
+
+
+footer .fb-like {
+	text-align: center;
+	margin: .5em 0;
+} 
+
+
+.center {
+	margin: auto;
+	text-align: center;
+	max-width: 100%;
+}
+
+video {
+	width: 350px;
+	height: 175px;
+}
+
+figure {
+	margin: auto;
+	background-color: #666 ;
+	padding:.5em;
+	padding-top: 1em;
+	text-align: center;
+	border-radius: .5em;
+	box-shadow: 0 3px 2px 1px #555;
+	overflow:hidden;
+}
+
+time {
+	display: inline-block;
+	margin-top:.5em;
+	font-size: .75em;
+}
+
+.about img {
+	border: 1px solid #555;
+	overflow: hidden;
+	border-radius: .25em;
+	margin: auto;
+	max-width: 100%;
+}
+
+.about {
+	margin-top: 2em;
+}
+
+.about img {
+	text-align: center;
+}
+
+.links a:hover,
+.main a:hover {
+	text-decoration: underline;
+}
+
+.links ul {
+	border-bottom: 1px solid #666;
+	padding-bottom: 1em;
+}
+
+.map {
+	/*max-height: 25em;*/
+	margin-bottom: 1em;
+	overflow: hidden;
+}
+
+#history {
+	background-image: url(../img/harlow-helen.jpg);
+	background-position: center center;
+	max-width: 100%;
+	background-repeat: no-repeat;
+	padding: 0 1.5em;
+	font-family: 'Candal';
+	color: black;
+	font-weight: bolder;
+}
+
+/* Begin Footer Style */
+
+footer .social-sites {
+	margin-top: .75em;
+	clear: both;
+} 
+
+footer ul .web_symbolsregular  {
+	color: #2c2c2c;
+	
+}
+
+footer {
+	clear: both;
+}
+
+footer .header-border {
+	background-image: url(../img/dock-lake-bkg.jpg);
+	background-position:center 20%;
+	padding: 1.5em 0;
+}
+
+a {
+	color: #167A31;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header a:hover {
+	text-decoration: none;
+}
+
+
+.weather {
+	background-color: rgba(209, 209, 209, 0.77);
+	margin: 3em .5em 1.5em .5em;
+
+}
+
+.large {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.5em;
+}
+
+/* Google Calendar Responsive 
+with help from Thomas.Vanhoutte */
+
+.responsiveCal {
+	position: relative; 
+	padding-bottom: 70%; 
+	height: 0; 
+	overflow: hidden;
+	margin-bottom: 0;
+	
+}
+ 
+.responsiveCal iframe {
+	position: absolute;
+	top:0; 
+	left: 0; 
+	width: 60%; 
+	height: 80%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 0; 
+}
+
+.fishing-form,
+.rental-form {
+	margin-top: 3em;
+}
+
+
+/** {
+	border: 1px solid black;
+}*/
+
+
+/* Medial Querry */
+@media only screen and (min-width: 25em) {
+	.main-nav a {
+	padding: 5px 7px;
+	font-size: .8em;
+	}
+}
+
+@media only screen and (min-width: 32em) {
+	.main-nav a {
+	padding: 5px 8px;
+	font-size: 1em;
+	}
+}
+
+@media only screen and (min-width: 40em) {
+	figure,
+	.about img {
+		float: left;
+		margin-bottom: .5em;
+		margin-right: 1em;
+	}
+	.feature,
+	.about  {
+		overflow: hidden;
+	}
+	.main-nav a {
+	padding: 5px 10px;
+	font-size: 1em;
+	}
+}
+
+
+@media only screen and (min-width: 48em) {
+	.right-big {
+		float: right;
+		width: 62.5%;
+		margin-right: .5em;
+	}
+
+	.right-small {
+		float: right;
+		width: 35.25%;
+		margin-right: .5em;
+		margin-top:.5em;
+	}
+	.left-big {
+		float: left;
+		width: 62.5%;
+		margin-left: .5em;
+	}
+	.left-small {
+		float: left;
+		width: 35.25%;
+		margin-left: .5em;
+		margin-top:.5em;
+	}
+	.main-nav a {
+	padding: 5px 12px;
+	font-size: 1em;
+	}
+}
+

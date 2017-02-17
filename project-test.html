@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<!-- Pierce Gresham
+Assignment ##
+"example blog page with SEO"
+8/8/16 -->
+
+<html lang="en">
+<head>
+	<title>Project-1151 Pierce Gresham</title>
+	
+	<meta charset="utf-8">
+	
+
+	<!-- I chose to use Video.js here instead of the medialelement fallback, because it does not load by default on my browser which does support html5. I will test this site on older browsers to see how it performs. -->
+
+
+	<link href="http://vjs.zencdn.net/5.10.8/video-js.css" rel="stylesheet">
+	<!-- If you'd like to support IE8 -->
+  	<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	
+	<!-- meta command to set viewport width to the same as the device width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<!-- Insert SEO description HERE! -->
+	<meta name="description" content="An information page for the Anchorage at Auger Lake. Hiking, Fishing, Boating, Swimming, Camping and many more activities await you when you stay at the Anchorage.">
+	<!-- Insert SEO keywords HERE! -->
+	<meta name="keywords" content="boat, fish, fishing, camping, lake, bass, pan fish, bluegill, kayak, cliff jumping, cabin, Anchorage, Lake Auger, Rental Pok-o-moonshine, Ausable Falls">
+	<meta name="author" content="pierce gresham">
+	
+	<!-- Link CSS Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/project-test.css">
+	
+	<!-- Link Google Fonts -->
+	<link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Courgette">
+	<link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Open Sans">
+</head>
+
+<!-- ===== Begin Body ===== -->
+
+<body>
+
+<!-- Add code for FB like/share button -->
+
+<!-- Fix this FB button!!! -->
+<!-- <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> -->
+<div class="page">
+	
+	<!-- === Begin Header === -->
+	<header class="main-header">
+		<div class="header-border">
+		<h1 class="welcome-txt">Welcome Home to the Anchorage</h1>
+		<!-- Make trout larger as page viewer gets larger -->
+		<img class="loon-img" src="img/loon-art-small.png" alt="the amazing loon">
+		<!-- Lower case "Social Icons" are the round symbols
+		and upper case are the other.  -->
+		<ul class="social-sites">
+			<li><a class="web_symbolsregular" href="https://twitter.com/pierceanson">t</a></li>
+			<li><a class="web_symbolsregular" href="https://www.facebook.com/augerlake.anchorage/">f</a></li>
+		</ul>
+		<!-- Add facebook like and share button. Thanks to https://developers.facebook.com/docs/plugins/like-button#configurator for this! -->
+		<!-- <div class="fb-like" data-href="https://www.facebook.com/augerlake.anchorage/" data-width="150" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div> -->
+		</div>
+		<nav>
+				<ul class="main-nav">
+					<li class="current-page"><a href="index.html">Home</a>
+					</li>
+					<li><a href="anchorage.html">Anchorage</a></li>
+					<li class="drop-down"><a href="lake.html">The Lake</a>
+						<!-- <ul class="drop-nav">
+							<li><a href="fishing.html">Fishing</a></li>
+						</ul> -->
+					</li>
+					<li><a href="local-fun.html">Regional</a></li>	
+					<li><a href="rental-info.html">Rent</a></li>
+					<!-- <li><a href="more-fun.html">More Fun</a></li> -->	
+				</ul>
+			</nav>
+	</header>
+	<!-- End Header -->
+		
+		<!-- === Begin Main Section -->
+			<div class="main right-big">	
+				<section class="blogs">
+					<h2>The Anchorage at Auger Lake&hellip;</h2>		
+					<div class="feature">
+						<img src="img/lake-front.jpg" alt="a lovely camp by a lake">
+						<div class="feature-text">	
+							<p><span class="larger">The Camp  </span> is located on the shore of <a href="https://www.google.com/maps/place/Augur+Lake/@44.4607866,-73.5363626,13z/data=!3m1!4b1!4m5!3m4!1s0x4cca5e122582aaad:0x82fd74b340a70019!8m2!3d44.4587608!4d-73.5002682">Auger Lake</a>, or Auger Pond as some locals still call it. Nestled between Lake Champlain and the Adirondacks, it's location allows easy access to both the civilized and not so civilized world.</p>
+							<p>Come and take a look around at what this camp has to offer. It's rustic charm and peaceful evenings will not cease to delight.  <a href="rental-info.html">Check our availability</a>, or <a href="rental-info.html">request informaiton.</a></p>
+							<p>The camp has been in the <a href="anchorage.html">family</a> for over three generations, and has been loved by many family, friends, and neighbors over the years.</p>
+							<p>The camp and the surrounding area have much to offer. Come explore and stay a while.</p>
+						</div>	
+					</div>
+					
+				</section>
+			</div>
+
+			<div class="left-small">	
+				<div class="about" id="about">			
+					<div class="center">
+					<img class="center" src="img/boats.jpg" alt="a pair of boats tied near shore">
+					</div>	
+					<p>Nothing is more peaceful than a boat on the <a href="lake.html">lake</a> in the evening. A sunset cruise or an evening swim are fantastic ways to end a day.</p>	
+					<p>We have several small boats to choose from. Any and all of them can get you to some great spots for fishing, swimmin, jumping, or lounging around.</p>
+					<p>While you're here, be sure to check out the <a href="http://outboard-boat-motor-repair.com/Evinrude%203%20HP%20Lightwin%20Outboard%20Boat%20Motor/default.htm" title="">Evinrude Light Twin!</a> It was cutting edge in it's time to be sure. </p>		
+				</div>
+				<div class="weather">
+					<div class="center" style="width: 300px; max-width:100%;"><iframe style="display: block;" src="http://cdnres.willyweather.com/widget/loadView.html?id=55538" width="300" height="228" frameborder="0" scrolling="no"></iframe><a style="height: 20px;text-indent: -9999em;z-index: 1;margin: -20px 0 0 0;position: relative;display: block" href="http://www.willyweather.com/ny/essex-county/keeseville.html">keeseville weather information</a></div>
+				</div>		
+			</div>
+		
+		<!-- End Main Section -->		
+	<!-- === Begin Footer === -->
+	<footer>
+
+		<div class="header-border" id="footer">
+			<h1 class="welcome-txt">Come Back Soon</h1>
+			<ul class="social-sites">
+			<li><a class="web_symbolsregular" href="https://twitter.com/pierceanson">t</a></li>
+			<li><a class="web_symbolsregular" href="https://www.facebook.com/augerlake.anchorage/">f</a></li>
+		</ul>
+		</div>	
+	</footer>
+	<!-- End Footer -->
+</div>
+
+
+<!-- I chose to use Video.js here instead of the medialelement fallback, because it does not load by default on my browser which does support html5. I will test this site on older browsers to see how it performs. -->
+<script src="http://vjs.zencdn.net/5.10.8/video.js"></script>
+
+
+<!-- Add script to activate the mediaelementplayer for both video and audio players -->
+<!-- <script type="text/javascript">
+	$('audio,video').mediaelementplayer();
+</script> -->
+
+</body>
+</html>
+

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<!-- Pierce Gresham
+Assignment ##
+"example blog page with SEO"
+8/8/16 -->
+
+<html lang="en">
+<head>
+	<title>Project-1151 Pierce Gresham</title>
+	
+	<meta charset="utf-8">
+	
+
+	<!-- I chose to use Video.js here instead of the medialelement fallback, because it does not load by default on my browser which does support html5. I will test this site on older browsers to see how it performs. -->
+
+
+	<link href="http://vjs.zencdn.net/5.10.8/video-js.css" rel="stylesheet">
+	<!-- If you'd like to support IE8 -->
+  	<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	
+	<!-- meta command to set viewport width to the same as the device width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<!-- Insert SEO description HERE! -->
+	<meta name="description" content="An information page for the Anchorage at Auger Lake. Hiking, Fishing, Boating, Swimming, Camping and many more activities await you when you stay at the Anchorage.">
+	<!-- Insert SEO keywords HERE! -->
+	<meta name="keywords" content="boat, fish, fishing, camping, lake, bass, pan fish, bluegill, kayak, cliff jumping, cabin, Anchorage, Lake Auger, Rental Pok-o-moonshine, Ausable Falls">
+	<meta name="author" content="pierce gresham">
+	
+	<!-- Link CSS Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/project-test.css">
+	
+	<!-- Link Google Fonts -->
+	<link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Courgette">
+	<link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Open Sans">
+</head>
+
+<!-- ===== Begin Body ===== -->
+
+<body>
+
+<!-- Add code for FB like/share button -->
+
+<!-- Fix this FB button!!! -->
+<div id="fb-root"></div>
+<!-- <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> -->
+<div class="page">
+	
+	<!-- === Begin Header === -->
+	<header class="main-header">
+		<div class="header-border">
+		<h1 class="welcome-txt">Welcome Home to the Anchorage</h1>
+		<!-- Make trout larger as page viewer gets larger -->
+		<img class="loon-img" src="img/loon-art-small.png" alt="the amazing loon">
+		<!-- Lower case "Social Icons" are the round symbols
+		and upper case are the other.  -->
+		<ul class="social-sites">
+			<li><a class="web_symbolsregular" href="https://twitter.com/pierceanson">t</a></li>
+			<li><a class="web_symbolsregular" href="https://www.facebook.com/augerlake.anchorage/">f</a></li>
+		</ul>
+		<!-- Add facebook like and share button. Thanks to https://developers.facebook.com/docs/plugins/like-button#configurator for this! -->
+		<!-- <div class="fb-like" data-href="https://www.facebook.com/augerlake.anchorage/" data-width="150" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div> -->
+		</div>
+		<nav>
+				<ul class="main-nav">
+					<li><a href="index.html">Home</a>
+					</li>
+					<li><a href="anchorage.html">Anchorage</a></li>
+					<li class="drop-down"><a href="lake.html">The Lake</a>
+						<!-- <ul class="drop-nav">
+							<li><a href="fishing.html">Fishing</a></li>
+						</ul> -->
+					</li>
+					<li><a href="local-fun.html">Regional</a></li>	
+					<li><a href="rental-info.html">Rent</a></li>
+					<!-- <li class="current-page"><a href="more-fun.html">More Fun</a></li> -->	
+				</ul>
+			</nav>
+	</header>
+	<!-- End Header -->
+		
+		<!-- === Begin Main Section -->
+		<div class="main">	
+
+			<section class="blogs">
+				<h2>Latest Entries &hellip;</h2>		
+				<article class="blog-post">
+					<h2>Warren Falls</h2>
+					<figure>
+						
+						<!-- Here I added some videos. I provided multiple file types and a text message to download the file if unsuported.  -->
+						<video controls preload="metadata" height="175" width="300" >
+							<source src="vid/falls.mp4" type="video/mp4">
+							<source src="vid/falls.webm" type="video/webm">
+							<p><a href="vid/falls.mp4">Download the video</a> here.</p>
+						</video>
+						<figcaption>Here is a quick look around the lower pool at Warren Falls.
+						</figcaption>		
+					</figure>
+					<p>It's still summer and plenty warm here in Vermont. A great time to go <a href="http://www.vtstateparks.com/htm/swimming.htm"> swimming</a>. The area offers many choices when looking for a spot to cool off. This week, the kids and I took a day trip to Warren Falls. It is actually a series of falls, plunge pools, and wading pools. These falls attract quite a few visitors in the summer, so go early and midweek if possible.</p>
+					<time datetime="2016-08-09T15:00" class="pubdate">August 9, 2016 at 03:00pm</time>	
+				</article>
+				
+			</section>
+		</div>	
+		<div class="right">	
+			<div class="about" id="about">			
+				<h2 >Hello World!</h2>				
+				<img src="img/about-me-kids.jpg" alt="me and the kids" >
+				<p>Hi Friends, My name is Pierce and I am enjoying this thing called life. Never a dull moment if you know where to look, and I rarely need to go looking. I'm so glad you chanced on this little page. It is an exercize for my <a href="https://sites.google.com/site/jilmactraining/web-development"> Web Dev</a> class, but who knows, it could become a regular thing.</p>
+				
+			</div>
+			<aside class="links">
+				<h2>Some interesting links &hellip;</h2>
+				<ul id="summer-links">
+					<li><a href="http://www.madrivervalley.com/vt/activities/swimming/warren-falls">Warren Falls, VT</a></li>
+					<li><a href="http://www.vtstateparks.com/htm/swimming.htm">Swimming in VT</a></li>
+					<li><a href="http://ausablebrewing.tumblr.com/">The Ausable Brewing Company</a></li>
+				</ul>
+				
+				<!-- Here I added some audio links with multiple sources and fallback to download the file if not supported -->
+				<ul id="tune-links">
+					<li>
+						<p>Here's a tune by regional musicians <a href="http://www.cdbaby.com/Artist/KaufmanandStratton">Don Stratton and Alan Kaufman</a> .</p>
+						<audio controls>
+							<source src="audio/sally-alley.mp3" type="audio/mp3">
+							<source src="audio/sally-alley.ogg" type="audio/ogg">
+							<p>Your browser doesn't support HTML5 audio, but you can <a href="audio/sally-alley.mp3">download the file here</a>.</p>
+						</audio>	
+					</li>
+					<li>
+						<p>Here's an older tune from an album called <a href="http://www.folkways.si.edu/andy-cahan-laura-fishleder-and-lisa-ornstein/ship-in-the-clouds/old-time/music/album/smithsonian"><em>Ship in the Clouds</em></a></p>
+						<audio controls>
+							<source src="audio/ship-clouds.mp3" type="audio/mp3">
+							<source src="audio/ship-clouds.ogg" type="audio/ogg">
+							<p>Your browser doesn't support HTML5 audio, but you can <a href="audio/ship-clouds.mp3">download the file here</a>.</p>
+						</audio>
+					</li>
+				</ul>
+				<p>Here are a few tools that I used to manipulate my video and audio files for the above links.</p>
+				<ul id="tech-links">
+					<li><a href="https://en.wikipedia.org/wiki/Miro_(software)">Miro Video Converting Software</a>
+					</li>
+					<li>
+						<a href="https://en.wikipedia.org/wiki/Windows_Movie_Maker">Windows Live Movie Maker</a>
+					</li>
+					<li>
+						<a href="https://en.wikipedia.org/wiki/VLC_media_player">VLC Media Player</a>
+					</li>
+				</ul>
+
+
+				<!-- Add links here. Dont forget to include the id="links" for the anchor tag. -->
+			</aside>			
+		</div>
+		<!-- End Main Section -->		
+	<!-- === Begin Footer === -->
+	<footer>
+
+		<div class="header-border" id="footer">
+			<h1 class="welcome-txt">Come Back Soon</h1>
+			<ul class="social-sites">
+			<li><a class="web_symbolsregular" href="https://twitter.com/pierceanson">t</a></li>
+			<li><a class="web_symbolsregular" href="https://www.facebook.com/augerlake.anchorage/">f</a></li>
+		</ul>
+		</div>	
+	</footer>
+	<!-- End Footer -->
+</div>
+
+
+<!-- I chose to use Video.js here instead of the medialelement fallback, because it does not load by default on my browser which does support html5. I will test this site on older browsers to see how it performs. -->
+<script src="http://vjs.zencdn.net/5.10.8/video.js"></script>
+
+
+<!-- Add script to activate the mediaelementplayer for both video and audio players -->
+<!-- <script type="text/javascript">
+	$('audio,video').mediaelementplayer();
+</script> -->
+
+</body>
+</html>
+

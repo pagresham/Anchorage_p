@@ -1,0 +1,25 @@
+This is some Pseudo-code!
+
+I want to make a marshmellow/smore calculator for my camp's website.
+A user would enter in variables:
+	# of adults
+	# of childeren 
+	# of nights at camp
+	which side of the lake youre on 
+		camp side
+			standard formula
+		far side
+			standard + xtra for George
+				Reces large pb cups 1/night
+
+App would return the number of: 
+	chocolate bars
+	Boxes of grahm crackers
+	bags of marshmellows
+	Reces for George
+
+App would have a nice aesthetic. 
+	Apear as a cool phone app.
+	Use form elements to take in the data. 
+		use Javascript to do the math.
+		
